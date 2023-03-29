@@ -1,7 +1,7 @@
 const PokemonCard = (props) => {
   return (
     <figure>
-      {props["imgSrc"] ? <img src={props.imgSrc} alt={props.name} /> : "???"}
+      {props["image"] ? <img src={props.image} alt={props.name} /> : "???"}
       <figcaption>{props.name}</figcaption>
     </figure>
   );
