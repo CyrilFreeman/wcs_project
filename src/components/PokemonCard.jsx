@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import NavBar from "./NavBar";
 
 function PokemonCard(props) {
   return (
