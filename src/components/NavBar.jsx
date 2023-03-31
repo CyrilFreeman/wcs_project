@@ -1,22 +1,16 @@
-import { useState } from "react";
-function NavBar({ pokemonIndex, setpokemonIndex, pokemonList }) {
-  console.log();
-
-  const handleClick = () => {
-    setpokemonIndex(pokemonIndex + 1);
-  };
-
-  const handledéClick = () => {
-    setpokemonIndex(pokemonIndex - 1);
+function NavBar({ setPokemonIndexList, pokemonList, pokemonIndexList }) {
+  const handleClickPokemon = (pokeName) => {
+    const index = pokemonList.findIndex((poke) => poke.name === pokeName);
+    setPokemonIndexList(index);
+    pokeName === "pikachu" ? alert("pika pikachu !!!") : null;
   };
   return (
     <div>
-      {pokemonIndex > 0 ? <button onClick={handledéClick}>DéClick</button> : ""}
-      {pokemonIndex < pokemonList.length - 1 ? (
-        <button onClick={handleClick}>Click</button>
-      ) : (
-        ""
-      )}
+      {pokemonList.map((poke) => (
+        <button key={poke.name} onClick={() => handleClickPokemon(poke.name)}>
+          {poke.name}
+        </button>
+      ))}
     </div>
   );
 }

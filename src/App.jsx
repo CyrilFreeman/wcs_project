@@ -1,10 +1,9 @@
 import "./App.css";
-import PokemonCard from "./components/PokemonCard";
 import { useState } from "react";
+import PokemonCard from "./components/PokemonCard";
 import NavBar from "./components/NavBar";
 
 function App() {
-  const [pokemonIndex, setpokemonIndex] = useState(0);
   const pokemonList = [
     {
       name: "bulbasaur",
@@ -30,18 +29,17 @@ function App() {
       name: "mew",
     },
   ];
-
-  const pokemon = pokemonList[pokemonIndex];
+  const [pokemonIndexList, setPokemonIndexList] = useState(0);
 
   return (
     <div>
       <NavBar
-        pokemonIndex={pokemonIndex}
-        setpokemonIndex={setpokemonIndex}
+        pokemonIndexList={pokemonIndexList}
+        setPokemonIndexList={setPokemonIndexList}
         pokemonList={pokemonList}
       />
-      <PokemonCard pokemonList={pokemonList} pokemon={pokemon} />
-      <p>{pokemonIndex}</p>
+      <p pokemonIndexList={pokemonIndexList}>{pokemonIndexList}</p>
+      <PokemonCard pokemon={pokemonList[pokemonIndexList]} />
     </div>
   );
 }

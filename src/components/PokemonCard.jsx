@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import NavBar from "./NavBar";
 
 function PokemonCard(props) {
   return (
@@ -18,7 +17,7 @@ PokemonCard.propTypes = {
   pokemon: PropTypes.shape({
     name: PropTypes.string.isRequired,
     imgSrc: PropTypes.string,
-  }),
+  }).isRequired,
 };
 
 export default PokemonCard;
