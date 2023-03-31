@@ -4,7 +4,11 @@ function NavBar({ setPokemonIndexList, pokemonList, pokemonIndexList }) {
     const index = pokemonList.findIndex((poke) => poke.name === pokeName);
     setPokemonIndexList(index);
     pokeName === "pikachu" ? alert("pika pikachu !!!") : null;
-    pokeName === "bulbasaur" ? alert("hello pokemon trainer :)") : null;
+    pokeName === "bulbasaur"
+      ? useEffect(() => {
+          alert("hello pokemon trainer :)");
+        }, [])
+      : null;
   };
 
   return (
