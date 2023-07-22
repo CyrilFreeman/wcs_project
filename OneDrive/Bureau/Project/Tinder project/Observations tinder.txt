@@ -1,0 +1,28 @@
+
+
+1) les boutons changent de taillent quand on est dessus
+
+
+2) les informations sur le profil utilisateur ne sont pas forcément les même suivant les images
+
+3) alerte te souhaitant bienvenu et t'indiquant les endroits où chercher les infos. 
+
+4) défilement des images aléatoire (mais augmentation des chances d'être vu si on paie... lol)
+
+5) Envoie de notification avec image du profil si like d'une personne tierce (sauf si on paie... lol)
+
+6) possibilité de parler si like réciproque (sauf si on paie lol ?)
+
+7) nombres limités de like par jour (sauf si tu paies lol)
+
+
+
+Filtre///
+
+âge/ville/sexe bonus ---> distance
+
+
+
+
+
+
